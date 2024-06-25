@@ -26,3 +26,5 @@ My **Neovim configuration** can be found [here](https://github.com/vieitesss/nvi
 # TODO
 
 - Installation script
+- Zsh config
+- Include aliases
