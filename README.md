@@ -1,10 +1,8 @@
 # .dot_linux
 
-Updated dotfiles for Linux
+Updated dotfiles for Linux.
 
-My previous dotfiles are [here](https://github.com/vieitesss/.dotfiles.git). Those dotfiles are not been mantained.
-
-These are a simple version of the previous. However, they are more than enough for some customization.
+These are a simple version of [my previous dotfiles](https://github.com/vieitesss/.dotfiles.git). However, they are more than enough for some customization.
 
 My **Neovim configuration** can be found [here](https://github.com/vieitesss/nvim)
 
