@@ -1,11 +1,11 @@
 format = """
 $directory\
-$git_branch\
-$git_state\
-$git_status\
 $character"""
 
 right_format = """
+$git_branch\
+$git_state\
+$git_status\
 $c\
 $lua\
 $java\
@@ -95,7 +95,7 @@ style = "bold yellow"
 disabled = false
 
 [cmd_duration]
-format = "[$duration ]($style)"
+format = "[ $duration]($style)"
 style = "bold white"
 
 # # Disable the package module, hiding it from the prompt completely
