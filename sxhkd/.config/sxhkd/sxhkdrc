@@ -122,11 +122,11 @@ super + {o,i}
 
 # focus dektop
 super + {1-9}
-    bspc desktop -f '^{1-9}'
+    bspc desktop -f {1-9}
 
 # send to the given desktop
 super + shift + {1-9}
-    /home/vieites/.config/bspwm/scripts/bspwm_movewindow {1-9}
+    bspc node --to-desktop {1-9}
 
 #
 # preselect

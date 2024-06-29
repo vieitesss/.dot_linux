@@ -5,8 +5,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 monitor1=$(xrandr | grep " connected" | head -n 1 | awk '{print $1}')
 if [[ "$(xrandr | grep " connected" | wc -l)" -eq "2" ]]; then
     monitor2=$(xrandr | grep " connected" | tail -n 1 | awk '{print $1}')
-    bspc monitor $monitor1 -d 1 2 3
-    bspc monitor $monitor2 -d 4 5 6
+    bspc monitor $monitor1 -d 2 3 4
+    bspc monitor $monitor2 -d 1 5 6
 else
     bspc monitor $monitor1 -d 1 2 3 4 5
 fi
