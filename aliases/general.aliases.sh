@@ -22,6 +22,11 @@ alias bat="/usr/local/bin/bat --decorations=never --paging=never"
 alias batn="/usr/local/bin/bat -n"
 alias batnl="/usr/local/bin/bat -p"
 
+# alacritty
+alacritty-theme() {
+  docker run --rm -it -v $HOME/.config/alacritty:/app/alacritty vieitesss/alacritty-themes
+}
+
 # Shortcuts to edit startup files
 alias vbrc="vim ~/.bashrc"
 alias vrc="vim ~/.config/nvim/init.lua"

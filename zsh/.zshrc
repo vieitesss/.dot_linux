@@ -35,13 +35,18 @@ function include_to_path() {
     export PATH="$1:$PATH"
 }
 
+function include_to_end_path() {
+    export PATH="$PATH:$1"
+}
+
 include_to_path "/sbin:/bin:/usr/bin:/usr/local/bin"
+include_to_end_path "/opt"
 
 # CONFIG
 export DOTFILES="$HOME/.dot_linux"
 export HOSTNAME=$(hostname)
 export TERM="screen-256color"
-export DISPLAY=:1.0
+export DISPLAY=:0.0
 
 # Bat
 export BAT_THEME="OneHalfDark"
@@ -72,10 +77,17 @@ if [[ -d /usr/local/opt/llvm ]]; then
     include_to_path "/usr/local/opt/llvm/bin"
 fi
 
-source "$DOTFILES/aliases/general.aliases.sh"
-source "$DOTFILES/aliases/git.aliases.sh"
-source "$DOTFILES/aliases/docker.aliases.sh"
-source "$DOTFILES/aliases/tmux.aliases.sh"
+function source_folder() {
+  for file in "$1"/*; do
+    if [[ -z "$file" ]]; then
+      source "$file"
+    fi
+  done
+}
+
+source_folder "$DOTFILES/aliases"
+source_folder "$HOME/obsidian/terminal"
+
 source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$HOME/.zsh/sudo.plugin.zsh"
 # source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
