@@ -79,7 +79,7 @@ fi
 
 function source_folder() {
   for file in "$1"/*; do
-    if [[ -z "$file" ]]; then
+    if [[ -f "$file" ]]; then
       source "$file"
     fi
   done

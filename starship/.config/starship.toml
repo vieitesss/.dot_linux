@@ -75,9 +75,9 @@ disabled = false
 format = "[$symbol$version ]($style)"
 
 [rust]
-symbol = " "
+symbol = ""
 style = "bold #dd3617"
-format = "[$symbol$toolchain ]($style)"
+format = "[ $symbol $toolchain ]($style)"
 
 [lua]
 symbol = " "
