@@ -58,7 +58,8 @@ config.window_padding = {
 }
 config.window_background_opacity = 0.90
 config.macos_window_background_blur = 10
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 
 -- Colorscheme
 -- config.color_scheme = 'Monokai (base16)'
@@ -71,10 +72,10 @@ config.color_scheme = "Rosé Pine Moon (Gogh)"
 
 -- Font
 -- config.font = wezterm.font_with_fallback { 'JetBrains Mono', 'Hack Nerd Font' }
--- config.font = wezterm.font_with_fallback { 'Victor Mono Nerd Font Mono', 'Hack Nerd Font' }
+config.font = wezterm.font_with_fallback { 'Victor Mono Nerd Font Mono', 'Hack Nerd Font' }
 -- config.font = wezterm.font_with_fallback { 'SF Mono', 'Hack Nerd Font Mono' }
 -- config.font = wezterm.font("BlexMono Nerd Font Mono")
-config.font = wezterm.font("Victor Mono Nerd Font Mono", { weight = "Medium" })
+-- config.font = wezterm.font("Victor Mono Nerd Font Mono", { weight = "Medium" })
 config.font_size = 15
 -- Disable ligatures
 config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }

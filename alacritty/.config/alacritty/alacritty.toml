@@ -19,19 +19,19 @@ WINIT_X11_SCALE_FACTOR = "1.25"
 size = 12
 
 [font.bold]
-family = "BlexMono Nerd Font"
+family = "Victor Mono Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "BlexMono Nerd Font"
+family = "Victor Mono Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "BlexMono Nerd Font"
+family = "Victor Mono Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "BlexMono Nerd Font"
+family = "Victor Mono Nerd Font Mono"
 style = "Regular"
 
 [mouse]
@@ -56,41 +56,41 @@ x = 12
 y = 10
 
 ### Colors ###
-# Colors (Kanagawa Wave)
-# Source https//github.com/rebelot/kanagawa.nvim
-
 [colors.primary]
-background = '#1f1f28'
-foreground = '#dcd7ba'
+background = '#232136'
+foreground = '#e0def4'
 
-[colors.normal]
-black   = '#090618'
-red     = '#c34043'
-green   = '#76946a'
-yellow  = '#c0a36e'
-blue    = '#7e9cd8'
-magenta = '#957fb8'
-cyan    = '#6a9589'
-white   = '#c8c093'
+[colors.cursor]
+text = '#e0def4'
+cursor = '#56526e'
 
-[colors.bright]
-black   = '#727169'
-red     = '#e82424'
-green   = '#98bb6c'
-yellow  = '#e6c384'
-blue    = '#7fb4ca'
-magenta = '#938aa9'
-cyan    = '#7aa89f'
-white   = '#dcd7ba'
+[colors.vi_mode_cursor]
+text = '#e0def4'
+cursor = '#56526e'
 
 [colors.selection]
-background = '#2d4f67'
-foreground = '#c8c093'
+text = '#e0def4'
+background = '#44415a'
+[colors.normal]
+black = '#393552'
+red = '#eb6f92'
+green = '#3e8fb0'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ea9a97'
+white = '#e0def4'
 
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa066'
+[colors.bright]
+black = '#6e6a86'
+red = '#eb6f92'
+green = '#3e8fb0'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ea9a97'
+white = '#e0def4'
 
-[[colors.indexed_colors]]
-index = 17
-color = '#ff5d62'
+[colors.hints]
+start = { foreground = '#908caa', background = '#2a273f' }
+end = { foreground = '#6e6a86', background = '#2a273f' }
